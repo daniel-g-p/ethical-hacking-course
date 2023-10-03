@@ -4,14 +4,82 @@
 
 ### IP Addresses
 
-- IP = Internet Protocol
+- IP = Internet Protocol (Logical Address: WHERE is the device)
 - "ipconfig -all" command
 - IP address classes
-    - Class A: 10.0.0.0 (Mask 255.0.0.0)
-    - Class B: 172.16.0.0 - 172.31.0.0 (Mask 255.255.0.0)
-    - Class C: 192.168.0.0 - 192.168.255.255 (Mask 255.255.255.0)
-    - Loopback: 127.0.0.1 - 127.0.0.7 (Mask 255.255.255.0)
+  - Class A: 10.0.0.0 (Mask 255.0.0.0)
+  - Class B: 172.16.0.0 - 172.31.0.0 (Mask 255.255.0.0)
+  - Class C: 192.168.0.0 - 192.168.255.255 (Mask 255.255.255.0)
+  - Loopback: 127.0.0.1 - 127.0.0.7 (Mask 255.255.255.0)
 
 ### MAC Addresses
 
-- MAC = Media Access Control
+- MAC = Media Access Control (Physical Address: WHO is the device)
+
+### Internet Protocols
+
+- TCP = Transmission Control Protocol (connection-based, reliable)
+- UDP = User Datagram Protocol (not connection-based, fast)
+- TCP uses a three-way handshake (SYN => SYN ACK => ACK)
+
+### Common Ports
+
+- TCP
+  - FTP (File Transfer Protocol, Port 21)
+  - SSH (Secure Shell, Port 22)
+  - Telnet (SSH without encryption, Port 23)
+  - SMTP (Simple Mail Transfer Protocol, Port 25)
+  - DNS (Domain Name System, Port 53)
+  - HTTP (Hypertext Transfer Protocol, Port 80)
+  - HTTPS (HTTP with encryption, 443)
+  - POP3 (Post Office Protocol, Port 110)
+  - SMB (Server Message Block, Port 139/445)
+  - IMAP (Internet Message Access Protocol, Port 143)
+- UDP
+  - DNS (Domain Name System, Port 53)
+  - DHCO (Dynamic Host Configuration Protocol, Port 67/68)
+  - TFTP (Trivial File Transport Protocol, Port 69)
+  - SNMP (Simple Network Management Protocol, Port 161)
+
+### OSI Model
+
+- Mnemonic: Please Do Not Throw Sausage Pizza Away (PDNTSPA)
+- Layers
+  1. Physical
+  2. Data
+  3. Network
+  4. Transport
+  5. Session
+  6. Presentation
+  7. Application
+
+## 2. Subnetting
+
+### Subnet Masks
+
+- CIDR (/32, /24, /16, /8) defines the number of hosts that a network supports
+- 00000000.00000000.00000000.00000000 (0.0.0.0) - 11111111.11111111.11111111.11111111 (255.255.255.255)
+- Within a CIDR, the first IP address is used as Network ID and the last IP address as the Broadcast ID
+
+## 3. Kali Linux
+
+### Command Line Commands
+
+- echo {OUTPUT} > {FILE}: Return output
+- chmod {PERMISSIONS} {FILE}: Change file permissions
+- adduser {USERNAME}: Add user
+- sudo: Run command with root permissions
+- su {USERNAME}: Switch user
+- usermod -aG {GROUP} {USERNAME}: Add user to group
+- ifconfig: Show IP address information
+- iwconfig: SHow wireless connection information
+- ip n: 
+
+### Important Files
+
+- /etc/passwd (Users): {USERNAME}:{PASSWORD}:{USER_ID}:{GROUP_ID}:{USER_INFO}:{HOME_FOLDER}:{SHELL_BINARY}
+- /etc/shadow (Passwords): {USERNAME}:{PASSWORD}:{LAST_UPDATE}:{MINIMUM_DAYS}:{MAXIMUM_DAYS}:{WARNING_DAYS}:{INACTIVE_DAYS}:{EXPIRATION_DATE}
+- /etc/group (Groups): {GROUP}:{PASSWORD}:{GROUP_ID}:{GROUP_MEMBERS}
+
+
+###
