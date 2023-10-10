@@ -73,7 +73,16 @@
 - usermod -aG {GROUP} {USERNAME}: Add user to group
 - ifconfig: Show IP address information
 - iwconfig: SHow wireless connection information
+- ip a: View all networking information
 - ip n: 
+- ip r: View routing table
+- ping: Ping machine
+- service {SERVICE} start: Start service
+- service {SERVICE} stop: Stop service
+- python3 -m http.server {PORT}: Serve current directory contents as web server
+- apt install {PACKAGE}: Install a package
+- apt update: Update packages' index files 
+- apt upgrade: Update packages
 
 ### Important Files
 
@@ -81,5 +90,10 @@
 - /etc/shadow (Passwords): {USERNAME}:{PASSWORD}:{LAST_UPDATE}:{MINIMUM_DAYS}:{MAXIMUM_DAYS}:{WARNING_DAYS}:{INACTIVE_DAYS}:{EXPIRATION_DATE}
 - /etc/group (Groups): {GROUP}:{PASSWORD}:{GROUP_ID}:{GROUP_MEMBERS}
 
+### Kali Linux Specialties
 
-###
+- Don't upgrade packages in Kali Linux, it potentially breaks its functionality
+- pimpmykali (https://github.com/Dewalt-arch/pimpmykali): Package to customize Kali Linux
+
+### Ping Sweeping
+
