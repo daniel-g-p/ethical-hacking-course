@@ -97,3 +97,37 @@
 
 ### Ping Sweeping
 
+## 4. Ethical Hacking Introduction
+
+### Ethical Hacking Cycle
+
+- Stage 1: Information Gathering
+- Stage 2: Scanning & Research
+- Stage 3: Access Gaining
+- Stage 4: Access Maintenance
+- Stage 5: Cleanup
+
+### Email Discovery
+
+- Email discovery websites:
+  - phonebook.cz
+  - hunter.io
+  - voilanorbert.com
+  - clearbit.com
+  - emailhippo.com
+- Account Recovery process for email verification
+- Data breach databases
+  - dehashed.com
+
+### Subdomain Listing
+
+- sublist3r (Shell)
+- crt.sh (Web)
+- OWASP Amass (Shell)
+
+### Tech Stack Scanning
+
+- builtwith.com (Web)
+- wappalyzer.com (Web)
+- whatweb (Shell)
+
