@@ -74,14 +74,14 @@
 - ifconfig: Show IP address information
 - iwconfig: SHow wireless connection information
 - ip a: View all networking information
-- ip n: 
+- ip n:
 - ip r: View routing table
 - ping: Ping machine
 - service {SERVICE} start: Start service
 - service {SERVICE} stop: Stop service
 - python3 -m http.server {PORT}: Serve current directory contents as web server
 - apt install {PACKAGE}: Install a package
-- apt update: Update packages' index files 
+- apt update: Update packages' index files
 - apt upgrade: Update packages
 
 ### Important Files
@@ -110,7 +110,7 @@
 ### Email Discovery
 
 - Email discovery websites:
-  - phonebook.cz
+  - phonebook.cz (\*)
   - hunter.io
   - voilanorbert.com
   - clearbit.com
@@ -131,3 +131,23 @@
 - wappalyzer.com (Web)
 - whatweb (Shell)
 
+## 5. Enumeration
+
+### OWASP Amass
+
+- amass enum -list => View data sources
+- amass enum -d {DOMAIN} -o {OUTPUT_FILE} => Run enumeration for a domain
+
+### Proxy Server
+
+- Windows Settings > Network & Internet > Manual Proxy Setup
+
+## 6. Google Operators
+
+- "{SEARCH_PHRASE}" => Search for exact phrase
+- {A} OR {B} => Search for results related either search term
+- {A} AND {B} => Search for results related to both search terms
+- -{EXCLUSION_TERM} => Search for results excluding a term
+- define:{TERM} => Search definition of a word
+- filetype:{TERM} => Search for results of a specific filetype
+-
