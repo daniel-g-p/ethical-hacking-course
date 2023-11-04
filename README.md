@@ -150,4 +150,7 @@
 - -{EXCLUSION_TERM} => Search for results excluding a term
 - define:{TERM} => Search definition of a word
 - filetype:{TERM} => Search for results of a specific filetype
--
+
+## 7. nmap
+
+
